@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container">
+        <form action="">
+            <p>CASIO</p>
+            <input id="result" type="text"><br>
+    
+            <input class="button operator2" onclick="allClearFun()" type="button" value="AC" >
+            <!-- <input class="button operator" onclick="displayNum('( )')" type="button" value="( )" > -->
+            <input class="button operator" onclick="displayNum('( ')" type="button" value='(' >
+            <input class="button operator" onclick="displayNum(')')" type="button" value=")" >
+            <!-- <input class="button operator" onclick="displayNum('%')" type="button" value="%" > -->
+            <input class="button operator" onclick="displayNum('/')" type="button" value="/" ><br>
+
+            <input class="button" onclick="displayNum(7)" type="button" value="7" >
+            <input class="button" onclick="displayNum(8)" type="button" value="8" >
+            <input class="button" onclick="displayNum(9)" type="button" value="9" >
+            <input class="button operator" onclick="displayNum('*')" type="button" value="*" ><br>
+    
+            <input class="button" onclick="displayNum(4)" type="button" value="4" >
+            <input class="button" onclick="displayNum(5)" type="button" value="5" >
+            <input class="button" onclick="displayNum(6)" type="button" value="6" >
+            <input class="button operator" onclick="displayNum('-')" type="button" value="-" ><br>
+    
+            <input class="button" onclick="displayNum(1)" type="button" value="1" >
+            <input class="button" onclick="displayNum(2)" type="button" value="2" >
+            <input class="button" onclick="displayNum(3)" type="button" value="3" >
+            <input class="button operator" onclick="displayNum('+')" type="button" value="+" ><br>
+    
+            <input class="button" onclick="displayNum(0)" type="button" value="0" >
+            <input class="button" onclick="displayNum('.')" type="button" value="." >
+            <input class="button operator1" onclick="backFun()" type="button" value="DEL" >
+            <input class="button operator" onclick="evaluateExpression()" type="button" value="=" >
+        </form>
+    </div>
+    <footer>Copyright © 2024 Arun PS</footer>
+</body>
+<script src="./calculator.js"></script>
+</html>

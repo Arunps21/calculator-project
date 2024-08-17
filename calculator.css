@@ -2,7 +2,7 @@ h1{
     text-align: center;
 }
 .container{
-    width: min(460px);
+    width: min(460px,100%);
     height: 618px;
     margin: auto;
     background-color: rgb(27, 26, 26);
